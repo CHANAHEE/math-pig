@@ -1,11 +1,84 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HELLO</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>수학 퀴즈 & 퍼즐 | 매일 한 문제</title>
+  <meta name="description" content="수학 퀴즈와 퍼즐을 매일 한 문제씩. 난이도별/유형별로 풀고, 힌트와 해설로 개념을 정리하세요." />
+
+  <!-- Canonical: 중복 URL(https/http, www/non-www) 정리 -->
+  <link rel="canonical" href="https://YOUR_DOMAIN.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="수학 퀴즈 & 퍼즐 | 매일 한 문제" />
+  <meta property="og:description" content="수학 퀴즈와 퍼즐을 매일 한 문제씩. 힌트/해설 포함." />
+  <meta property="og:url" content="https://YOUR_DOMAIN.com/" />
+  <!-- 나중에 대표 이미지 만들면 교체 -->
+  <meta property="og:image" content="https://YOUR_DOMAIN.com/assets/img/og-default.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="수학 퀴즈 & 퍼즐 | 매일 한 문제" />
+  <meta name="twitter:description" content="수학 퀴즈와 퍼즐을 매일 한 문제씩. 힌트/해설 포함." />
+  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/assets/img/og-default.png" />
+
+  <!-- Favicon (지금은 없어도 OK, 나중에 추가) -->
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Minimal inline CSS (다음 단계에서 /assets/css로 분리) -->
+  <style>
+    :root { color-scheme: light dark; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height:1.5; }
+    header, main, footer { max-width: 960px; margin: 0 auto; padding: 20px; }
+    nav a { margin-right: 12px; text-decoration: none; }
+    .card { border: 1px solid rgba(127,127,127,.35); border-radius: 12px; padding: 16px; }
+    .muted { opacity: .75; }
+    .btn { display:inline-block; padding:10px 14px; border:1px solid rgba(127,127,127,.45); border-radius:10px; text-decoration:none; }
+  </style>
+
+  <!-- Structured Data: WebSite + SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "수학 퀴즈 & 퍼즐",
+    "url": "https://YOUR_DOMAIN.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://YOUR_DOMAIN.com/search/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
 </head>
+
 <body>
-  HELLO
+  <header>
+    <h1>HELLO 👋</h1>
+    <p class="muted">여기는 수학 퀴즈/퍼즐을 모아두는 사이트입니다. (초기 구축 중)</p>
+    <nav aria-label="주요 메뉴">
+      <a href="/">홈</a>
+      <a href="/puzzles/">문제</a>
+      <a href="/about.html">소개</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>오늘의 목표</h2>
+      <p>이 사이트를 “퀴즈/퍼즐에 특화된 구조 + 검색엔진이 이해하는 구조”로 차근차근 확장합니다.</p>
+      <a class="btn" href="/puzzles/">문제 보러가기(준비중)</a>
+    </section>
+  </main>
+
+  <footer>
+    <p class="muted">© <span id="y"></span> 수학 퀴즈 & 퍼즐</p>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
